@@ -3,3 +3,27 @@ if ($1) {
 	$0
 }
 endsnippet
+
+snippet bef "before" b
+beforeEach(() => {
+		$1
+		});
+endsnippet
+
+snippet des "describe" b
+describe('$1', () => {
+		$2
+		});
+endsnippet
+
+snippet it "it" b
+it(() => {
+		$1
+		});
+endsnippet
+
+snippet tes "test" b
+test('$1', () => {
+		$2
+		});
+endsnippet
