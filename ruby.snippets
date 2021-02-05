@@ -1,0 +1,46 @@
+snippet dr "data repair" b
+def data_repair_method(ticket, execute: false)
+	PaperTrail.whodunnit = ticket
+
+	if execute
+	end
+end
+
+ticket = "TICKET";
+execute = false;
+data_repair_method(ticket, execute: execute)
+
+endsnippet
+
+snippet context "context" b
+context "$1" do
+	$0
+end
+endsnippet
+
+snippet before "before" b
+before do
+	$0
+end
+endsnippet
+
+snippet it "it" b
+it "$1" do
+	$0
+end
+endsnippet
+
+snippet expect_to_receive "expect to receive" b
+	expect($1)
+		.to receive(:$2)
+		.with($0)
+endsnippet
+
+snippet expect_to_not_receive "expect to not receive" b
+expect($1)
+	.to_not receive(:$0)
+endsnippet
+
+snippet expect_to_equal "expect to equal" b
+expect($1).to eq($0)
+endsnippet
