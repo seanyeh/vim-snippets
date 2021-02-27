@@ -3,3 +3,11 @@ if [ $1 ]; then
 	$0
 fi
 endsnippet
+
+snippet oif "one line if" b
+[ $1 ] && $0
+endsnippet
+
+snippet oifn "one line if not" b
+[ $1 ] || $0
+endsnippet
